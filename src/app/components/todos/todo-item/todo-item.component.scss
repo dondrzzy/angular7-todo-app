@@ -1,0 +1,17 @@
+@import "../../../../variables";
+.title {
+    input{ 
+        margin-right: 5px;
+    }
+}
+
+.del {
+    background-color: $error;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.is-completed {
+    text-decoration: line-through;
+}
+
