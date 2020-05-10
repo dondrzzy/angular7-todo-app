@@ -1,0 +1,12 @@
+<ng-container>
+    <td>{{ todo.id }}</td>
+    <td class="title">
+        <input type="checkbox" (change)="handleToggle()" [checked]="todo.completed" />
+        <span [ngClass]="todo.completed ? 'is-completed' : ''">{{ todo.title }}</span>
+    </td>
+    <td class="flex">
+        <button type="button" class="close del" data-dismiss="modal" aria-label="Close" (click)="handleDelete(todo)">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </td>
+</ng-container>
